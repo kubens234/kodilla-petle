@@ -1,15 +1,15 @@
 "use strict"
 
-var n = prompt('Jak wysoka ma być choinka?');
+var rows = prompt('Jak wysoka ma być choinka?');
 
 document.write('Wysokość choinki: ' + n);
 
-function rysujChoinke() {
+function rysujChoinke(n) {
+   	var star = "";
 	for(var i = 0; i <= n; i++) {
-		var star = "";
+		star = "";
 		for(var j=0; j< i*2-1; j++){
 			star += '*';
-
 		}
 		document.write('<br >');
 		console.log(star);
@@ -17,4 +17,4 @@ function rysujChoinke() {
 	}
 }
 
-rysujChoinke();
+rysujChoinke(rows);
