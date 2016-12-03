@@ -2,7 +2,7 @@
 
 var rows = prompt('Jak wysoka ma być choinka?');
 
-document.write('Wysokość choinki: ' + n);
+document.write('Wysokość choinki: ' + rows);
 
 function rysujChoinke(n) {
    	var star = "";
